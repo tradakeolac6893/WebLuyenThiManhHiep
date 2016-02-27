@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LayOut.master.cs" Inherits="LuyenThiHiep.Master.LayOut" %>
+
+<%@ Register Src="~/Control/uclHeader.ascx" TagPrefix="uc1" TagName="uclHeader" %>
+<%@ Register Src="~/Control/uclFooter.ascx" TagPrefix="uc1" TagName="uclFooter" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="/Content/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/Content/js/jquery-1.11.0.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="/Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Study Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--Google Fonts-->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="/Content/js/move-top.js"></script>
+    <script type="text/javascript" src="/Content/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smoth-scrolling -->
+    <script src="/Content/js/menu_jquery.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmMain" method="post" runat="server">
+        <uc1:uclHeader runat="server" ID="uclHeader" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        <uc1:uclFooter runat="server" ID="uclFooter" />
+    </form>
+    <!--copyright start here-->
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright-main">
+                <p>© 2016 Study. All rights reserved | Design by  <a href="https://www.facebook.com/trada.keolac6893" target="_blank">Nguyễn Đức Trung </a></p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--copyright end here-->
+</body>
+</html>

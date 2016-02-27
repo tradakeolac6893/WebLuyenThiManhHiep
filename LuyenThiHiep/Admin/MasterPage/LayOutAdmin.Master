@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LayOutAdmin.master.cs" Inherits="LuyenThiHiep.Admin.MasterPage.LayOutAdmin" %>
+
+<%@ Register Src="~/Admin/Control/uclLeftMenu.ascx" TagPrefix="uc1" TagName="uclLeftMenu" %>
+<%@ Register Src="~/Admin/Control/uclTop.ascx" TagPrefix="uc1" TagName="uclTop" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Easy Admin Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="/Admin/Content/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="/Admin/Content/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Graph CSS -->
+    <link href="/Admin/Content/css/font-awesome.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="/Admin/Content/css/icon-font.min.css" type='text/css' />
+    <!-- //lined-icons -->
+    <!-- chart -->
+    <script src="/Admin/Content/js/Chart.js"></script>
+    <!-- //chart -->
+    <!--animate-->
+    <script src="../Content/js/bootstrap-datepicker.js"></script>
+    <script src="../Content/js/bootstrap-datetimepicker.min.js"></script>
+    <link href="../Content/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="/Admin/Content/css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/Admin/Content/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--//end-animate-->
+    <!----webfonts--->
+    <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!---//webfonts--->
+    <!-- Meters graphs -->
+    <script src="/Admin/Content/js/jquery-1.10.2.min.js"></script>
+    <!-- Placed js at the end of the document so the pages load faster -->
+</head>
+<body class="sticky-header left-side-collapsed">
+    <section>
+        <uc1:uclLeftMenu runat="server" ID="uclLeftMenu" />
+        <!-- main content start-->
+        <div class="main-content">
+            <!-- header-starts -->
+            <uc1:uclTop runat="server" ID="uclTop" />
+            <!-- //header-ends -->
+            <form id="frmMain" runat="server">
+                <div class="page-wrapper">
+                    <div class="graphs">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--footer section start-->
+        <footer>
+            <p>Bản Quyền Thiết Kế Thuộc Về Developer: <a href="https://www.facebook.com/trada.keolac6893" target="_blank">Nguyễn Đức Trung</a></p>
+        </footer>
+        <!--footer section end-->
+    </section>
+    <script src="/Admin/Content/js/jquery.nicescroll.js"></script>
+    <script src="/Admin/Content/js/scripts.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../Content/js/jquery-1.10.2.min.js"></script>
+    <script src="/Admin/Content/js/bootstrap.min.js"></script>
+</body>
+</html>
