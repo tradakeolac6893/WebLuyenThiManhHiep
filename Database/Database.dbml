@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LuyenThiManhHiep" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=FIT-TRUNGND;Initial Catalog=LuyenThiManhHiep;User ID=sa" SettingsObjectName="Database.Properties.Settings" SettingsPropertyName="LuyenThiManhHiepConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="hoanghiep" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TRADAKEOLAC;Initial Catalog=hoanghiep;Persist Security Info=True;User ID=sa" SettingsObjectName="Database.Properties.Settings" SettingsPropertyName="hoanghiepConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.tblAdv" Member="tblAdvs">
     <Type Name="tblAdv">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -17,8 +17,8 @@
       <Column Name="Alias" Type="System.Data.Linq.Binary" DbType="VarBinary(50)" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="Statust" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Association Name="tblCategory_tblNew" Member="tblNews" ThisKey="Id" OtherKey="CateID" Type="tblNew" />
-      <Association Name="tblClass_tblCategory" Member="tblClass" ThisKey="ClassId" OtherKey="Id" Type="tblClass" IsForeignKey="true" />
       <Association Name="tblUser_tblCategory" Member="tblUser" ThisKey="UserCreate" OtherKey="ID" Type="tblUser" IsForeignKey="true" />
+      <Association Name="tblClass_tblCategory" Member="tblClass" ThisKey="ClassId" OtherKey="Id" Type="tblClass" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.tblComment" Member="tblComments">
@@ -29,14 +29,6 @@
       <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="Statust" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Association Name="tblUser_tblComment" Member="tblUser" ThisKey="UserID" OtherKey="ID" Type="tblUser" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.tblClass" Member="tblClasses">
-    <Type Name="tblClass">
-      <Column Name="Id" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="tblClass_tblCategory" Member="tblCategories" ThisKey="Id" OtherKey="ClassId" Type="tblCategory" />
     </Type>
   </Table>
   <Table Name="dbo.tblConfig" Member="tblConfigs">
@@ -98,6 +90,15 @@
       <Association Name="tblUser_tblCategory" Member="tblCategories" ThisKey="ID" OtherKey="UserCreate" Type="tblCategory" />
       <Association Name="tblUser_tblComment" Member="tblComments" ThisKey="ID" OtherKey="UserID" Type="tblComment" />
       <Association Name="tblUser_tblNew" Member="tblNews" ThisKey="ID" OtherKey="UserId" Type="tblNew" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblClass" Member="tblClasses">
+    <Type Name="tblClass">
+      <Column Name="Id" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Avata" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblClass_tblCategory" Member="tblCategories" ThisKey="Id" OtherKey="ClassId" Type="tblCategory" />
     </Type>
   </Table>
 </Database>

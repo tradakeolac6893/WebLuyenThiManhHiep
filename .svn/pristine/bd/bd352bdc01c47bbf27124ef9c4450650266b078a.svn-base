@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LayOutSingle.master.cs" Inherits="LuyenThiHiep.Master.LayOutSingle" %>
+
+<%@ Register Src="~/Control/uclTopSingle.ascx" TagPrefix="uc1" TagName="uclTopSingle" %>
+<%@ Register Src="~/Control/uclFooter.ascx" TagPrefix="uc1" TagName="uclFooter" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="/Content/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/Content/js/jquery-1.11.0.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="/Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Study Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--Google Fonts-->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="/Content/js/move-top.js"></script>
+    <script type="text/javascript" src="/Content/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smoth-scrolling -->
+    <script src="/Content/js/menu_jquery.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <uc1:uclTopSingle runat="server" ID="uclTopSingle" />
+    <form id="frmMainSingle" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <uc1:uclFooter runat="server" ID="uclFooter" />
+
+
+    <div class="advantages">
+        <div class="container">
+            <div class="advantage-main">
+                <div class="advance-top">
+                    <h3>Advantages</h3>
+                </div>
+                <div class="advance-bottom">
+                    <div class="col-md-6 advantage-left">
+                        <div class="advanc-grid">
+                            <div class="col-md-3 advanc-icons">
+                                <img src="/Content/images/a1.png" alt="">
+                            </div>
+                            <div class="col-md-9 advanc-text">
+                                <h4>Open Access</h4>
+                                <p>Praesent nunc nunc, egestas eget elementum sed; rutrum eget metus! Vestibulum congue congue dui</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="advanc-grid">
+                            <div class="col-md-3 advanc-icons">
+                                <img src="/Content/images/a2.png" alt="">
+                            </div>
+                            <div class="col-md-9 advanc-text">
+                                <h4>Open Access</h4>
+                                <p>Praesent nunc nunc, egestas eget elementum sed; rutrum eget metus! Vestibulum congue congue dui</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 advantage-right">
+                        <div class="advanc-grid">
+                            <div class="col-md-3 advanc-icons">
+                                <img src="/Content/images/a3.png" alt="">
+                            </div>
+                            <div class="col-md-9 advanc-text">
+                                <h4>Open Access</h4>
+                                <p>Praesent nunc nunc, egestas eget elementum sed; rutrum eget metus! Vestibulum congue congue dui</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="advanc-grid">
+                            <div class="col-md-3 advanc-icons">
+                                <img src="/Content/images/a4.png" alt="">
+                            </div>
+                            <div class="col-md-9 advanc-text">
+                                <h4>Open Access</h4>
+                                <p>Praesent nunc nunc, egestas eget elementum sed; rutrum eget metus! Vestibulum congue congue dui</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--copyright start here-->
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright-main">
+                <p>© 2016 Study. All rights reserved | Design by  <a href="https://www.facebook.com/trada.keolac6893" target="_blank">Nguyễn Đức Trung </a></p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--copyright end here-->
+</body>
+</html>

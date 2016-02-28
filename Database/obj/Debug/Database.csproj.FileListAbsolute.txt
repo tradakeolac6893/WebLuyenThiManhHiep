@@ -9,3 +9,9 @@ D:\Test\Project\LuyenThiHiep\LuyenThiHiep\Database\bin\Debug\Database.dll
 D:\Test\Project\LuyenThiHiep\LuyenThiHiep\Database\bin\Debug\Database.pdb
 D:\Test\Project\LuyenThiHiep\LuyenThiHiep\Database\obj\Debug\Database.dll
 D:\Test\Project\LuyenThiHiep\LuyenThiHiep\Database\obj\Debug\Database.pdb
+D:\Du_An_Khach_Hang\ManhHiep\WebLuyenThiManhHiep\WebLuyenThiManhHiep\Database\bin\Debug\Database.dll.config
+D:\Du_An_Khach_Hang\ManhHiep\WebLuyenThiManhHiep\WebLuyenThiManhHiep\Database\bin\Debug\Database.dll
+D:\Du_An_Khach_Hang\ManhHiep\WebLuyenThiManhHiep\WebLuyenThiManhHiep\Database\bin\Debug\Database.pdb
+D:\Du_An_Khach_Hang\ManhHiep\WebLuyenThiManhHiep\WebLuyenThiManhHiep\Database\obj\Debug\Database.dll
+D:\Du_An_Khach_Hang\ManhHiep\WebLuyenThiManhHiep\WebLuyenThiManhHiep\Database\obj\Debug\Database.pdb
+D:\Du_An_Khach_Hang\ManhHiep\WebLuyenThiManhHiep\WebLuyenThiManhHiep\Database\obj\Debug\Database.csprojResolveAssemblyReference.cache
